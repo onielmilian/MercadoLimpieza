@@ -15,14 +15,14 @@ const AboutSection = () => {
               Nuestra misión
             </h3>
             <p className="text-gray-700 mb-4">
-              Conectar directamente a los agricultores locales con los
-              consumidores, eliminando intermediarios y garantizando precios
-              justos para ambos.
+              Conectar directamente a proveedores de productos de limpieza con
+              los consumidores, eliminando intermediarios y garantizando
+              productos de calidad a precios justos.
             </p>
             <p className="text-gray-700">
-              Promovemos la agricultura sostenible y el consumo responsable en
-              Cuba, apoyando a las familias campesinas y facilitando el acceso a
-              alimentos frescos.
+              Promovemos prácticas de higiene responsables y el acceso fácil a
+              limpiadores, desinfectantes y accesorios confiables para el hogar
+              y negocios, apoyando a emprendedores locales del sector.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -50,7 +50,7 @@ const AboutSection = () => {
         </div>
 
         <h3 className="text-xl font-semibold text-green-800 mb-6 text-center">
-          Nuestros agricultores
+          Nuestros proveedores
         </h3>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {proveedores.map((proveedor, index) => (
@@ -65,7 +65,9 @@ const AboutSection = () => {
               />
               <h4 className="font-medium text-gray-800">{proveedor.name}</h4>
               <p className="text-sm text-gray-600">{proveedor.province}</p>
-              <p className="text-xs text-gray-500 mt-1">{proveedor.specialty}</p>
+              <p className="text-xs text-gray-500 mt-1">
+                {proveedor.specialty}
+              </p>
             </div>
           ))}
         </div>
