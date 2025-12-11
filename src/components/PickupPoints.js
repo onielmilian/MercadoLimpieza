@@ -192,7 +192,7 @@ const PickupPoints = () => {
             <li>Si deseas entrega a domicilio, completa los datos</li>
             <li>Entrega gratis en zonas cercanas de 8AM-12M</li>
             <li>Paga al recibir tus productos en la puerta de tu casa</li>
-            <li>¡Disfruta de alimentos directos del campo a tu mesa!</li>
+            <li>¡Disfruta de productos de limpieza de calidad!</li>
           </ol>
         </div>
       </div>
