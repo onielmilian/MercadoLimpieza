@@ -59,13 +59,13 @@ const AboutSection = () => {
               className="bg-white p-4 rounded-lg shadow-sm text-center"
             >
               <img
-                src={farmer.image}
-                alt={farmer.name}
+                src={proveedor.image}
+                alt={proveedor.name}
                 className="w-24 h-24 rounded-full mx-auto mb-3 object-cover"
               />
-              <h4 className="font-medium text-gray-800">{farmer.name}</h4>
-              <p className="text-sm text-gray-600">{farmer.province}</p>
-              <p className="text-xs text-gray-500 mt-1">{farmer.specialty}</p>
+              <h4 className="font-medium text-gray-800">{proveedor.name}</h4>
+              <p className="text-sm text-gray-600">{proveedor.province}</p>
+              <p className="text-xs text-gray-500 mt-1">{proveedor.specialty}</p>
             </div>
           ))}
         </div>
