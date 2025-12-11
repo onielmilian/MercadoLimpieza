@@ -19,7 +19,7 @@ const MercaditoHero = () => {
         </div>
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="imagenes/agricultores_cubanos.jpg"
+            src="imagenes/limpieza_hogar.jpg"
             alt="Productos de limpieza"
             className="rounded-lg shadow-md max-w-full h-auto"
           />
