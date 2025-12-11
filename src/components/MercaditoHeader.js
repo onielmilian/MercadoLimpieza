@@ -45,7 +45,9 @@ const MercaditoHeader = () => {
         {/* Menú de navegación */}
         <nav
           ref={menuRef}
-          className={`${menuOpen ? 'block' : 'hidden'} absolute top-full left-0 w-full bg-green-700 sm:static sm:block sm:w-auto`}
+          className={`$ {
+            menuOpen ? 'block' : 'hidden'
+          } absolute top-full left-0 w-full bg-green-700 sm:static sm:block sm:w-auto`}
         >
           <ul className="flex flex-col sm:flex-row text-center sm:text-left space-y-2 sm:space-y-0 sm:space-x-6 p-4 sm:p-0">
             <li><a href="#inicio" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Inicio</a></li>
