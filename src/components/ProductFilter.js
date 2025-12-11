@@ -1,25 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ProductFilter = ({ onFilter }) => {
-  const [selectedProvince, setSelectedProvince] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedProvince, setSelectedProvince] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
 
-  const provinces = ['La Habana', 'Matanzas', 'Villa Clara', 'Cienfuegos', 'Camagüey', 'Santiago de Cuba'];
-  const categories = ['Viandas', 'Frutas', 'Vegetales', 'Condimentos', 'Lácteos'];
+  const provinces = [
+    "La Habana",
+    "Matanzas",
+    "Villa Clara",
+    "Cienfuegos",
+    "Camagüey",
+    "Santiago de Cuba",
+    "Artemisa",
+    "Mayabeque",
+    "Pinar del Río",
+    "Santiago de Cuba",
+    "Holguín",
+    "Sancti Spíritus",
+    "Granma",
+  ];
+  const categories = [
+    "Detergentes",
+    "Desinfectantes",
+    "Jabones",
+    "Accesorios",
+    "Limpiadores",
+    "Lavandería",
+    "Aromatizantes",
+  ];
 
   const handleFilter = () => {
     onFilter({
       province: selectedProvince,
-      category: selectedCategory
+      category: selectedCategory,
     });
   };
 
   return (
     <div className="bg-gradient-to-r from-green-100 via-blue-50 to-green-50 p-6 rounded-2xl shadow mb-10 border border-green-100">
-      <h3 className="text-xl font-bold text-green-800 mb-4">Filtrar productos</h3>
+      <h3 className="text-xl font-bold text-green-800 mb-4">
+        Filtrar productos
+      </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label htmlFor="province" className="block text-sm font-medium text-green-700 mb-1">
+          <label
+            htmlFor="province"
+            className="block text-sm font-medium text-green-700 mb-1"
+          >
             Provincia
           </label>
           <select
@@ -30,12 +57,17 @@ const ProductFilter = ({ onFilter }) => {
           >
             <option value="">Todas las provincias</option>
             {provinces.map((province) => (
-              <option key={province} value={province}>{province}</option>
+              <option key={province} value={province}>
+                {province}
+              </option>
             ))}
           </select>
         </div>
         <div>
-          <label htmlFor="category" className="block text-sm font-medium text-green-700 mb-1">
+          <label
+            htmlFor="category"
+            className="block text-sm font-medium text-green-700 mb-1"
+          >
             Categoría
           </label>
           <select
@@ -46,7 +78,9 @@ const ProductFilter = ({ onFilter }) => {
           >
             <option value="">Todas las categorías</option>
             {categories.map((category) => (
-              <option key={category} value={category}>{category}</option>
+              <option key={category} value={category}>
+                {category}
+              </option>
             ))}
           </select>
         </div>
