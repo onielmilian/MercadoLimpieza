@@ -23,10 +23,4 @@ export const proveedores = [
     specialty: "Limpiadores",
     image: "",
   },
-  {
-    name: "Químicos del Caribe",
-    province: "Santiago de Cuba",
-    specialty: "Limpiadores",
-    image: "",
-  },
 ];
