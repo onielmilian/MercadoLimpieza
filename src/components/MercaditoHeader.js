@@ -25,11 +25,13 @@ const MercaditoHeader = () => {
     <header className="bg-blue-700 shadow-sm sticky top-0 z-10">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
-          <img
-            src="imagenes/logo.png"
-            alt="MercadoLimpio"
-            className="w-12 h-12 rounded-full object-cover"
-          />
+          <div className="w-12 h-12 rounded-full overflow-hidden">
+            <img
+              src="imagenes/logo.png"
+              alt="MercadoLimpio"
+              className="w-full h-full object-cover transform scale-110"
+            />
+          </div>
           <h1 className="ml-2 text-lg sm:text-xl font-bold text-white whitespace-nowrap">
             MercadoLimpio
           </h1>
