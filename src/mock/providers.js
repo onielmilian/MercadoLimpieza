@@ -3,24 +3,24 @@ export const proveedores = [
     name: "Distribuidora El Sol",
     province: "La Habana",
     specialty: "Detergentes",
-    image: "",
+    image: "imagenes/proveedor1.jpg",
   },
   {
     name: "Productos Higiene Total",
     province: "Artemisa",
     specialty: "Desinfectantes",
-    image: "",
+    image: "imagenes/proveedor1.jpg",
   },
   {
     name: "Limpieza Perfecta S.A.",
     province: "Mayabeque",
     specialty: "Jabones",
-    image: "",
+    image: "imagenes/proveedor1.jpg",
   },
   {
     name: "Aromas y Limpieza",
     province: "Pinar del Río",
     specialty: "Limpiadores",
-    image: "",
+    image: "imagenes/proveedor1.jpg",
   },
 ];
