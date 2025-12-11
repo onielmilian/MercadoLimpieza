@@ -1,0 +1,80 @@
+export const proveedores = [
+  {
+    name: "Distribuidora El Sol",
+    province: "La Habana",
+    specialty: "Detergentes",
+    image: "",
+  },
+  {
+    name: "Productos Higiene Total",
+    province: "Artemisa",
+    specialty: "Desinfectantes",
+    image: "",
+  },
+  {
+    name: "Limpieza Perfecta S.A.",
+    province: "Mayabeque",
+    specialty: "Jabones",
+    image: "",
+  },
+  {
+    name: "Todo Limpio",
+    province: "La Habana",
+    specialty: "Accesorios",
+    image: "",
+  },
+  {
+    name: "Aromas y Limpieza",
+    province: "Pinar del Río",
+    specialty: "Limpiadores",
+    image: "",
+  },
+  {
+    name: "Protección Plus",
+    province: "Villa Clara",
+    specialty: "Accesorios",
+    image: "",
+  },
+  {
+    name: "Químicos del Caribe",
+    province: "Santiago de Cuba",
+    specialty: "Limpiadores",
+    image: "",
+  },
+  {
+    name: "Casa del Hogar",
+    province: "Cienfuegos",
+    specialty: "Accesorios",
+    image: "",
+  },
+  {
+    name: "Textil Clean",
+    province: "Camagüey",
+    specialty: "Lavandería",
+    image: "",
+  },
+  {
+    name: "Escobas y Más",
+    province: "Matanzas",
+    specialty: "Accesorios",
+    image: "",
+  },
+  {
+    name: "Cristal Brillante",
+    province: "Holguín",
+    specialty: "Limpiadores",
+    image: "",
+  },
+  {
+    name: "Fragancias del Hogar",
+    province: "Sancti Spíritus",
+    specialty: "Aromatizantes",
+    image: "",
+  },
+  {
+    name: "Plásticos Modernos",
+    province: "Granma",
+    specialty: "Accesorios",
+    image: "",
+  },
+];

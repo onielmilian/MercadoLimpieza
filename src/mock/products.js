@@ -4,7 +4,7 @@ export const products = [
     name: "Detergente en Polvo",
     category: "Detergentes",
     price: "45",
-    image: "imagenes/detergente_en_polvo.jpg", // No encontrada, puedes agregar la imagen si la tienes
+    image: "imagenes/detergente_en_polvo.webp",
     proveedor: "Distribuidora El Sol",
     province: "La Habana",
     available: 30,
