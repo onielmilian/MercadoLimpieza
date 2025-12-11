@@ -28,7 +28,7 @@ const MercaditoHeader = () => {
           <img
             src="imagenes/logo.png"
             alt="MercadoLimpio"
-            className="h-12"
+            className="w-12 h-12 rounded-full object-cover"
           />
           <h1 className="ml-2 text-lg sm:text-xl font-bold text-white whitespace-nowrap">
             MercadoLimpio
