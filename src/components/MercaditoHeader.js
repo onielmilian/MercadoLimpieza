@@ -22,11 +22,11 @@ const MercaditoHeader = () => {
   }, [menuOpen]);
 
   return (
-    <header className="bg-green-700 shadow-sm sticky top-0 z-10">
+    <header className="bg-blue-700 shadow-sm sticky top-0 z-10">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
           <img
-            src="imagenes/MercaditoCubano.png"
+            src="imagenes/logo.png"
             alt="MercadoLimpio"
             className="h-12"
           />
@@ -59,13 +59,13 @@ const MercaditoHeader = () => {
           ref={menuRef}
           className={`$ {
             menuOpen ? 'block' : 'hidden'
-          } absolute top-full left-0 w-full bg-green-700 sm:static sm:block sm:w-auto`}
+          } absolute top-full left-0 w-full bg-blue-700 sm:static sm:block sm:w-auto`}
         >
           <ul className="flex flex-col sm:flex-row text-center sm:text-left space-y-2 sm:space-y-0 sm:space-x-6 p-4 sm:p-0">
             <li>
               <a
                 href="#inicio"
-                className="text-green-100 hover:text-white block"
+                className="text-blue-100 hover:text-white block"
                 onClick={() => setMenuOpen(false)}
               >
                 Inicio
@@ -74,7 +74,7 @@ const MercaditoHeader = () => {
             <li>
               <a
                 href="#productos"
-                className="text-green-100 hover:text-white block"
+                className="text-blue-100 hover:text-white block"
                 onClick={() => setMenuOpen(false)}
               >
                 Productos
@@ -83,7 +83,7 @@ const MercaditoHeader = () => {
             <li>
               <a
                 href="#pagos"
-                className="text-green-100 hover:text-white block"
+                className="text-blue-100 hover:text-white block"
                 onClick={() => setMenuOpen(false)}
               >
                 Pagos
@@ -92,7 +92,7 @@ const MercaditoHeader = () => {
             <li>
               <a
                 href="#puntos"
-                className="text-green-100 hover:text-white block"
+                className="text-blue-100 hover:text-white block"
                 onClick={() => setMenuOpen(false)}
               >
                 Puntos
@@ -101,7 +101,7 @@ const MercaditoHeader = () => {
             <li>
               <a
                 href="#contacto"
-                className="text-green-100 hover:text-white block"
+                className="text-blue-100 hover:text-white block"
                 onClick={() => setMenuOpen(false)}
               >
                 Contacto
@@ -109,7 +109,7 @@ const MercaditoHeader = () => {
             </li>
             <li className="sm:hidden">
               <button
-                className="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors w-full mt-2"
+                className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors w-full mt-2"
                 onClick={() => setMenuOpen(false)}
               >
                 Mi cuenta
@@ -118,7 +118,7 @@ const MercaditoHeader = () => {
           </ul>
         </nav>
         {/* Botón Mi cuenta solo visible en desktop */}
-        <button className="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors hidden sm:block">
+        <button className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors hidden sm:block">
           Mi cuenta
         </button>
       </div>

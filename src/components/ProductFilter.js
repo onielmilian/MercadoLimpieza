@@ -37,21 +37,21 @@ const ProductFilter = ({ onFilter }) => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-green-100 via-blue-50 to-green-50 p-6 rounded-2xl shadow mb-10 border border-green-100">
-      <h3 className="text-xl font-bold text-green-800 mb-4">
+    <div className="bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 p-6 rounded-2xl shadow mb-10 border border-blue-100">
+      <h3 className="text-xl font-bold text-blue-800 mb-4">
         Filtrar productos
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label
             htmlFor="province"
-            className="block text-sm font-medium text-green-700 mb-1"
+            className="block text-sm font-medium text-blue-700 mb-1"
           >
             Provincia
           </label>
           <select
             id="province"
-            className="w-full p-2 border border-green-200 rounded-lg focus:ring-green-500 focus:border-green-500 bg-white"
+            className="w-full p-2 border border-blue-200 rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-white"
             value={selectedProvince}
             onChange={(e) => setSelectedProvince(e.target.value)}
           >
@@ -66,13 +66,13 @@ const ProductFilter = ({ onFilter }) => {
         <div>
           <label
             htmlFor="category"
-            className="block text-sm font-medium text-green-700 mb-1"
+            className="block text-sm font-medium text-blue-700 mb-1"
           >
             Categoría
           </label>
           <select
             id="category"
-            className="w-full p-2 border border-green-200 rounded-lg focus:ring-green-500 focus:border-green-500 bg-white"
+            className="w-full p-2 border border-blue-200 rounded-lg focus:ring-blue-500 focus:border-blue-500 bg-white"
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
           >
@@ -87,7 +87,7 @@ const ProductFilter = ({ onFilter }) => {
       </div>
       <button
         onClick={handleFilter}
-        className="mt-6 px-6 py-2 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 shadow transition-colors"
+        className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 shadow transition-colors"
       >
         Aplicar filtros
       </button>

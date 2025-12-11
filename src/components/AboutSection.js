@@ -3,7 +3,7 @@ import { proveedores } from "../mock/providers";
 
 const AboutSection = () => {
   return (
-    <section className="py-16 bg-green-50" id="conocenos">
+    <section className="py-16 bg-blue-50" id="conocenos">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
           Conócenos
@@ -11,7 +11,7 @@ const AboutSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
           <div>
-            <h3 className="text-xl font-semibold text-green-800 mb-3">
+            <h3 className="text-xl font-semibold text-blue-800 mb-3">
               Nuestra misión
             </h3>
             <p className="text-gray-700 mb-4">
@@ -34,7 +34,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <h3 className="text-xl font-semibold text-green-800 mb-6 text-center">
+        <h3 className="text-xl font-semibold text-blue-800 mb-6 text-center">
           Nuestros proveedores
         </h3>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

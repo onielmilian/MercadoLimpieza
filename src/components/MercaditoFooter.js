@@ -65,18 +65,18 @@ const MercaditoFooter = () => {
   ];
 
   return (
-    <footer className="bg-green-800 text-white py-12">
+    <footer className="bg-blue-800 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">MercadoLimpio</h3>
-            <p className="text-green-100 mb-4">{footerMessage}</p>
+            <p className="text-blue-100 mb-4">{footerMessage}</p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.url}
-                  className="text-green-200 hover:text-white"
+                  className="text-blue-200 hover:text-white"
                 >
                   {link.icon}
                 </a>
@@ -87,25 +87,22 @@ const MercaditoFooter = () => {
             <h3 className="text-lg font-semibold mb-4">Enlaces rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#inicio" className="text-green-200 hover:text-white">
+                <a href="#inicio" className="text-blue-200 hover:text-white">
                   Inicio
                 </a>
               </li>
               <li>
-                <a
-                  href="#productos"
-                  className="text-green-200 hover:text-white"
-                >
+                <a href="#productos" className="text-blue-200 hover:text-white">
                   Productos
                 </a>
               </li>
               <li>
-                <a href="#pagos" className="text-green-200 hover:text-white">
+                <a href="#pagos" className="text-blue-200 hover:text-white">
                   Métodos de pago
                 </a>
               </li>
               <li>
-                <a href="#puntos" className="text-green-200 hover:text-white">
+                <a href="#puntos" className="text-blue-200 hover:text-white">
                   Puntos de recogida
                 </a>
               </li>
@@ -113,11 +110,11 @@ const MercaditoFooter = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
-            <p className="text-green-200 mb-2">info@mercadolimpio.cu</p>
-            <p className="text-green-200">+53 555 1234</p>
+            <p className="text-blue-200 mb-2">info@mercadolimpio.cu</p>
+            <p className="text-blue-200">+53 555 1234</p>
           </div>
         </div>
-        <div className="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
+        <div className="border-t border-blue-700 mt-8 pt-8 text-center text-blue-200">
           <p>© 2025 MercadoLimpio. Todos los derechos reservados.</p>
         </div>
       </div>

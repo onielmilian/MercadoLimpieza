@@ -46,7 +46,7 @@ const ContactForm = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                 required
               />
             </div>
@@ -64,7 +64,7 @@ const ContactForm = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                 required
               />
             </div>
@@ -82,7 +82,7 @@ const ContactForm = () => {
                 rows="4"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                 required
               ></textarea>
             </div>
@@ -95,7 +95,7 @@ const ContactForm = () => {
                   type="checkbox"
                   checked={isSubscribed}
                   onChange={() => setIsSubscribed(!isSubscribed)}
-                  className="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded"
+                  className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
                 />
               </div>
               <div className="ml-3 text-sm">
@@ -114,7 +114,7 @@ const ContactForm = () => {
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 Enviar mensaje
               </button>
