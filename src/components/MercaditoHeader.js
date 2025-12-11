@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 const MercaditoHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,12 +12,12 @@ const MercaditoHeader = () => {
       }
     };
     if (menuOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     }
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuOpen]);
 
@@ -25,12 +25,14 @@ const MercaditoHeader = () => {
     <header className="bg-green-700 shadow-sm sticky top-0 z-10">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
-          <img 
-            src="imagenes/MercaditoCubano.png" 
-            alt="MercaditoCubano" 
+          <img
+            src="imagenes/MercaditoCubano.png"
+            alt="MercadoLimpio"
             className="h-12"
           />
-          <h1 className="ml-2 text-lg sm:text-xl font-bold text-white whitespace-nowrap">MercaditoCubano</h1>
+          <h1 className="ml-2 text-lg sm:text-xl font-bold text-white whitespace-nowrap">
+            MercadoLimpio
+          </h1>
         </div>
         {/* Botón hamburguesa solo en móviles */}
         <button
@@ -38,8 +40,18 @@ const MercaditoHeader = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Abrir menú"
         >
-          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            className="w-8 h-8"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
         {/* Menú de navegación */}
@@ -50,12 +62,59 @@ const MercaditoHeader = () => {
           } absolute top-full left-0 w-full bg-green-700 sm:static sm:block sm:w-auto`}
         >
           <ul className="flex flex-col sm:flex-row text-center sm:text-left space-y-2 sm:space-y-0 sm:space-x-6 p-4 sm:p-0">
-            <li><a href="#inicio" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Inicio</a></li>
-            <li><a href="#productos" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Productos</a></li>
-            <li><a href="#pagos" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Pagos</a></li>
-            <li><a href="#puntos" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Puntos</a></li>
-            <li><a href="#contacto" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Contacto</a></li>
-            <li className="sm:hidden"><button className="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors w-full mt-2" onClick={() => setMenuOpen(false)}>Mi cuenta</button></li>
+            <li>
+              <a
+                href="#inicio"
+                className="text-green-100 hover:text-white block"
+                onClick={() => setMenuOpen(false)}
+              >
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a
+                href="#productos"
+                className="text-green-100 hover:text-white block"
+                onClick={() => setMenuOpen(false)}
+              >
+                Productos
+              </a>
+            </li>
+            <li>
+              <a
+                href="#pagos"
+                className="text-green-100 hover:text-white block"
+                onClick={() => setMenuOpen(false)}
+              >
+                Pagos
+              </a>
+            </li>
+            <li>
+              <a
+                href="#puntos"
+                className="text-green-100 hover:text-white block"
+                onClick={() => setMenuOpen(false)}
+              >
+                Puntos
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contacto"
+                className="text-green-100 hover:text-white block"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contacto
+              </a>
+            </li>
+            <li className="sm:hidden">
+              <button
+                className="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors w-full mt-2"
+                onClick={() => setMenuOpen(false)}
+              >
+                Mi cuenta
+              </button>
+            </li>
           </ul>
         </nav>
         {/* Botón Mi cuenta solo visible en desktop */}

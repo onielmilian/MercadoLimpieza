@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubscribed, setIsSubscribed] = useState(false);
-  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Aquí iría la lógica para enviar el formulario
-    alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
-    setFormData({ name: '', email: '', message: '' });
+    alert("Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.");
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -28,11 +28,16 @@ const ContactForm = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Contáctanos</h2>
-          <p className="text-gray-600 mb-8">¿Tienes preguntas o sugerencias? Escríbenos.</p>
-          
+          <p className="text-gray-600 mb-8">
+            ¿Tienes preguntas o sugerencias? Escríbenos.
+          </p>
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Nombre completo
               </label>
               <input
@@ -45,9 +50,12 @@ const ContactForm = () => {
                 required
               />
             </div>
-            
+
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Correo electrónico
               </label>
               <input
@@ -60,9 +68,12 @@ const ContactForm = () => {
                 required
               />
             </div>
-            
+
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Mensaje
               </label>
               <textarea
@@ -75,7 +86,7 @@ const ContactForm = () => {
                 required
               ></textarea>
             </div>
-            
+
             <div className="flex items-start">
               <div className="flex items-center h-5">
                 <input
@@ -88,15 +99,18 @@ const ContactForm = () => {
                 />
               </div>
               <div className="ml-3 text-sm">
-                <label htmlFor="newsletter" className="font-medium text-gray-700">
-                  Suscribirme al boletín de MercaditoCubano
+                <label
+                  htmlFor="newsletter"
+                  className="font-medium text-gray-700"
+                >
+                  Suscribirme al boletín de MercadoLimpio
                 </label>
                 <p className="text-gray-500">
                   Recibe ofertas especiales y novedades sobre nuevos productos.
                 </p>
               </div>
             </div>
-            
+
             <div className="pt-2">
               <button
                 type="submit"
