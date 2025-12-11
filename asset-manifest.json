@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/MercadoLimpieza/static/css/main.bdcc09c2.css",
-    "main.js": "/MercadoLimpieza/static/js/main.1ace7dcf.js",
+    "main.js": "/MercadoLimpieza/static/js/main.21060ee3.js",
     "index.html": "/MercadoLimpieza/index.html",
     "main.bdcc09c2.css.map": "/MercadoLimpieza/static/css/main.bdcc09c2.css.map",
-    "main.1ace7dcf.js.map": "/MercadoLimpieza/static/js/main.1ace7dcf.js.map"
+    "main.21060ee3.js.map": "/MercadoLimpieza/static/js/main.21060ee3.js.map"
   },
   "entrypoints": [
     "static/css/main.bdcc09c2.css",
-    "static/js/main.1ace7dcf.js"
+    "static/js/main.21060ee3.js"
   ]
 }
