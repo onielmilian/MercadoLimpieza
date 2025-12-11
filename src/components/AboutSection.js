@@ -25,25 +25,10 @@ const AboutSection = () => {
               y negocios, apoyando a emprendedores locales del sector.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             <img
-              src="imagenes/agricultor_cubano.jpg"
-              alt="Agricultor cubano"
-              className="w-full h-48 object-cover rounded-lg shadow-md"
-            />
-            <img
-              src="imagenes/agricultora_cubana.jpg"
-              alt="Agricultora cubana"
-              className="w-full h-48 object-cover rounded-lg shadow-md"
-            />
-            <img
-              src="imagenes/trabajo_agricola.jpg"
-              alt="Trabajo agrícola"
-              className="w-full h-48 object-cover rounded-lg shadow-md"
-            />
-            <img
-              src="imagenes/cultivos.jpg"
-              alt="Cultivos"
+              src="imagenes/conocenos.jpg"
+              alt="Conócenos photo"
               className="w-full h-48 object-cover rounded-lg shadow-md"
             />
           </div>
